@@ -1,0 +1,9 @@
+-- Create a space --
+box.schema.space.create('bands')
+-- Specify field names and types --
+box.space.bands:format({
+    { name = 'key', type = 'string' },
+    { name = 'value', type = 'string' },
+
+})
+~                                                                                                                                                                                           ~                                                                                                                                                                                           ~                                                                                                                                                                                           ~                                                                                                                                                                                           ~                                                                                                                                                                                           ~                                                                                                                                                                                           ~                                                                                                                                                                                           ~                                                                                                                                                                                           ~                                                                                                                                                                                           ~               

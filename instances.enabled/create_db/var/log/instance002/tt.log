@@ -1,0 +1,78 @@
+Watchdog 2025/03/22 12:07:09 [INFO] Start
+Watchdog 2025/03/22 12:07:09 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance002"
+started
+2025-03-22 12:07:10.089 [1247] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-22 12:07:10.089 [1247] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-22 12:07:10.089 [1247] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-22 12:07:10.091 [1247] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-22 12:07:10.091 [1247] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-22 12:07:10.091 [1247] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-22 12:07:10.104 [1247] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-22 12:07:10.104 [1247] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-22 12:07:10.104 [1247] main/105/interactive box.cc:5439 I> instance uuid ae7017f6-e1f4-4001-940f-1d44a203f23e
+2025-03-22 12:07:10.104 [1247] main/105/interactive evio.c:269 I> tx_binary: bound to 127.0.0.1:3301
+2025-03-22 12:07:10.105 [1247] main/105/interactive memtx_engine.cc:718 I> initializing an empty data directory
+2025-03-22 12:07:10.123 [1247] main/105/interactive replication.cc:564 I> assigned id 1 to replica ae7017f6-e1f4-4001-940f-1d44a203f23e
+2025-03-22 12:07:10.123 [1247] main/105/interactive replication.cc:582 I> assigned name instance002 to replica ae7017f6-e1f4-4001-940f-1d44a203f23e
+2025-03-22 12:07:10.123 [1247] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-22 12:07:10.123 [1247] main/105/interactive alter.cc:4163 I> replicaset uuid d37d7d17-13f9-4ce0-b89a-30d072ad7031
+2025-03-22 12:07:10.123 [1247] main/105/interactive alter.cc:4176 I> replicaset name: replicaset001
+2025-03-22 12:07:10.127 [1247] snapshot/101/main memtx_engine.cc:1063 I> saving snapshot `/home/thethosaighfisic/vk_project/instances.enabled/create_db/var/lib/instance002/00000000000000000000.snap.inprogress'
+2025-03-22 12:07:10.134 [1247] snapshot/101/main memtx_engine.cc:1165 I> done
+2025-03-22 12:07:10.134 [1247] main/105/interactive box.cc:5936 I> ready to accept requests
+2025-03-22 12:07:10.134 [1247] main/107/gc gc.c:319 I> wal/engine cleanup is resumed
+2025-03-22 12:07:10.134 [1247] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'instance_name' configuration option to "instance002"
+2025-03-22 12:07:10.134 [1247] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'custom_proc_title' configuration option to "tarantool - instance002"
+2025-03-22 12:07:10.134 [1247] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'log_nonblock' configuration option to false
+2025-03-22 12:07:10.134 [1247] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'listen' configuration option to [{"uri":"127.0.0.1:3301"}]
+2025-03-22 12:07:10.134 [1247] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'replication' configuration option to []
+2025-03-22 12:07:10.134 [1247] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'replicaset_name' configuration option to "replicaset001"
+2025-03-22 12:07:10.134 [1247] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Sat Mar 22 13:28:25 2025
+2025-03-22 12:07:10.134 [1247] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'metrics' configuration option to {"labels":{"alias":"instance002"},"include":["all"],"exclude":[]}
+2025-03-22 12:07:10.135 [1247] main/118/sync_credentials/tarantool.config log.lua:130 W> box.schema.user.grant("sampleuser", "read,write", "space", "bands") has failed because either the object has not been created yet, a database schema upgrade has not been performed, or the privilege write has failed (separate alert reported)
+2025-03-22 12:07:10.147 [1247] main utils.c:700 E> LuajitError: builtin/config/applier/app.lua:13: myapp.lua:9: unexpected symbol near '~'
+2025-03-22 12:07:10.147 [1247] main main.cc:1089 F> fatal error, exiting the event loop
+Watchdog 2025/03/22 12:07:10 (WARN): "exit status 1".
+Watchdog 2025/03/22 12:07:10 (INFO): the Instance has shutdown.
+Watchdog 2025/03/22 12:07:30 [INFO] Start
+Watchdog 2025/03/22 12:07:30 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance002"
+started
+2025-03-22 12:07:30.486 [1291] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-22 12:07:30.486 [1291] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-22 12:07:30.486 [1291] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-22 12:07:30.488 [1291] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-22 12:07:30.488 [1291] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-22 12:07:30.488 [1291] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-22 12:07:30.488 [1291] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-22 12:07:30.498 [1291] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-22 12:07:30.498 [1291] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-22 12:07:30.498 [1291] main/105/interactive box.cc:5524 I> instance uuid ae7017f6-e1f4-4001-940f-1d44a203f23e
+2025-03-22 12:07:30.498 [1291] main/105/interactive box.cc:5553 I> instance vclock {1: 5}
+2025-03-22 12:07:30.498 [1291] main/105/interactive evio.c:269 I> tx_binary: bound to 127.0.0.1:3301
+2025-03-22 12:07:30.499 [1291] main/105/interactive memtx_engine.cc:286 I> recovery start
+2025-03-22 12:07:30.499 [1291] main/105/interactive memtx_engine.cc:291 I> recovering from `/home/thethosaighfisic/vk_project/instances.enabled/create_db/var/lib/instance002/00000000000000000000.snap'
+2025-03-22 12:07:30.507 [1291] main/105/interactive alter.cc:4176 I> replicaset name: replicaset001
+2025-03-22 12:07:30.507 [1291] main/105/interactive alter.cc:4163 I> replicaset uuid d37d7d17-13f9-4ce0-b89a-30d072ad7031
+2025-03-22 12:07:30.518 [1291] main/105/interactive replication.cc:564 I> assigned id 1 to replica ae7017f6-e1f4-4001-940f-1d44a203f23e
+2025-03-22 12:07:30.518 [1291] main/105/interactive replication.cc:582 I> assigned name instance002 to replica ae7017f6-e1f4-4001-940f-1d44a203f23e
+2025-03-22 12:07:30.518 [1291] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-22 12:07:30.518 [1291] main/105/interactive recovery.cc:370 I> recover from `/home/thethosaighfisic/vk_project/instances.enabled/create_db/var/lib/instance002/00000000000000000000.xlog'
+2025-03-22 12:07:30.518 [1291] main/105/interactive recovery.cc:162 W> file `/home/thethosaighfisic/vk_project/instances.enabled/create_db/var/lib/instance002/00000000000000000000.xlog` wasn't correctly closed
+2025-03-22 12:07:30.520 [1291] main/105/interactive box.cc:5936 I> ready to accept requests
+2025-03-22 12:07:30.520 [1291] main/105/interactive box.cc:588 I> leaving orphan mode
+2025-03-22 12:07:30.520 [1291] main/107/gc gc.c:319 I> wal/engine cleanup is resumed
+2025-03-22 12:07:30.520 [1291] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'instance_name' configuration option to "instance002"
+2025-03-22 12:07:30.520 [1291] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'custom_proc_title' configuration option to "tarantool - instance002"
+2025-03-22 12:07:30.520 [1291] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'log_nonblock' configuration option to false
+2025-03-22 12:07:30.520 [1291] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'listen' configuration option to [{"uri":"127.0.0.1:3301"}]
+2025-03-22 12:07:30.520 [1291] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'replication' configuration option to []
+2025-03-22 12:07:30.520 [1291] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'replicaset_name' configuration option to "replicaset001"
+2025-03-22 12:07:30.520 [1291] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Sat Mar 22 13:47:37 2025
+2025-03-22 12:07:30.520 [1291] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'metrics' configuration option to {"labels":{"alias":"instance002"},"include":["all"],"exclude":[]}
+2025-03-22 12:07:30.530 [1291] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-22 12:07:30.531 [1291] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Sat Mar 22 13:10:52 2025
+2025-03-22 12:07:30.534 [1291] main/121/sync_credentials/tarantool.config log.lua:130 W> box.schema.user.grant("sampleuser", "read,write", "space", "bands") has failed because either the object has not been created yet, a database schema upgrade has not been performed, or the privilege write has failed (separate alert reported)
+2025-03-22 12:07:30.541 [1291] main utils.c:700 E> LuajitError: builtin/config/applier/app.lua:13: myapp.lua:9: unexpected symbol near '~'
+2025-03-22 12:07:30.541 [1291] main main.cc:1089 F> fatal error, exiting the event loop
+Watchdog 2025/03/22 12:07:30 (WARN): "exit status 1".
+Watchdog 2025/03/22 12:07:30 (INFO): the Instance has shutdown.
