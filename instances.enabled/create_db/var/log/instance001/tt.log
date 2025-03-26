@@ -2824,3 +2824,48 @@ started
 2025-03-26 22:23:27.397 [67516] main/277/console/unix/: evio.c:269 I> tx_binary: bound to 0.0.0.0:3301
 2025-03-26 22:23:27.397 [67516] main/277/console/unix/:/box.load_cfg load_cfg.lua:942 I> set 'listen' configuration option to 3301
 2025-03-26 22:28:13.087 [67516] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Wed Mar 26 23:28:13 2025
+2025-03-26 23:26:51.900 [67516] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Thu Mar 27 00:26:51 2025
+2025-03-27 00:25:38.104 [67516] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Thu Mar 27 01:25:38 2025
+2025-03-27 01:24:33.129 [67516] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Thu Mar 27 02:24:33 2025
+2025-03-27 01:28:07.708 [67516] main/473/console/unix/: log.lua:318 C> Potentially long select from space 'bands' (512)
+ stack traceback:
+	builtin/box/schema.lua:2611: in function 'log_long_select'
+	builtin/box/schema.lua:2628: in function <builtin/box/schema.lua:2614>
+	[C]: in function 'pcall'
+	[string "local function func(...) local yaml = require..."]:1: in function <[string "local function func(...) local yaml = require..."]:1>
+	[string "local function func(...) local yaml = require..."]:1: in function 'fn'
+	builtin/box/console.lua:429: in function <builtin/box/console.lua:426>
+	[C]: in function 'xpcall'
+	builtin/box/console.lua:572: in function 'eval'
+	builtin/box/console.lua:995: in function 'repl'
+	builtin/box/console.lua:1171: in function <builtin/box/console.lua:1150>
+	[C]: in function 'pcall'
+	builtin/socket.lua:1138: in function <builtin/socket.lua:1136>
+2025-03-27 01:32:46.427 [67516] main/479/console/unix/: log.lua:318 C> Potentially long select from space 'bands' (512)
+ stack traceback:
+	builtin/box/schema.lua:2611: in function 'log_long_select'
+	builtin/box/schema.lua:2628: in function <builtin/box/schema.lua:2614>
+	[C]: in function 'pcall'
+	[string "local function func(...) local yaml = require..."]:1: in function <[string "local function func(...) local yaml = require..."]:1>
+	[string "local function func(...) local yaml = require..."]:1: in function 'fn'
+	builtin/box/console.lua:429: in function <builtin/box/console.lua:426>
+	[C]: in function 'xpcall'
+	builtin/box/console.lua:572: in function 'eval'
+	builtin/box/console.lua:995: in function 'repl'
+	builtin/box/console.lua:1171: in function <builtin/box/console.lua:1150>
+	[C]: in function 'pcall'
+	builtin/socket.lua:1138: in function <builtin/socket.lua:1136>
+2025-03-27 01:40:24.486 [67516] main/488/console/unix/: log.lua:318 C> Potentially long select from space 'bands' (512)
+ stack traceback:
+	builtin/box/schema.lua:2611: in function 'log_long_select'
+	builtin/box/schema.lua:2628: in function <builtin/box/schema.lua:2614>
+	[C]: in function 'pcall'
+	[string "local function func(...) local yaml = require..."]:1: in function <[string "local function func(...) local yaml = require..."]:1>
+	[string "local function func(...) local yaml = require..."]:1: in function 'fn'
+	builtin/box/console.lua:429: in function <builtin/box/console.lua:426>
+	[C]: in function 'xpcall'
+	builtin/box/console.lua:572: in function 'eval'
+	builtin/box/console.lua:995: in function 'repl'
+	builtin/box/console.lua:1171: in function <builtin/box/console.lua:1150>
+	[C]: in function 'pcall'
+	builtin/socket.lua:1138: in function <builtin/socket.lua:1136>

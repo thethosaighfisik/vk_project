@@ -21,6 +21,7 @@ func ConnectDB() (*tarantool.Connection){
 	port := os.Getenv("TARANTOOL_PORT")  // Будет "3301"
 
 // Используйте эти переменные для подключения
+
 	addr := fmt.Sprintf("%s:%s", host, port)
 
 	conn, err := tarantool.Connect(addr, opts)
