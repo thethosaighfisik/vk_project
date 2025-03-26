@@ -2138,3 +2138,689 @@ started
 2025-03-24 19:55:43.293 [803] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Mon Mar 24 20:55:43 2025
 2025-03-24 19:55:43.295 [803] coio xlog.c:2219 I> removed /home/thethosaighfisic/vk_project/instances.enabled/create_db/var/lib/instance001/00000000000000000113.snap
 2025-03-24 19:55:43.296 [803] coio xlog.c:2219 I> removed /home/thethosaighfisic/vk_project/instances.enabled/create_db/var/lib/instance001/00000000000000000113.xlog
+Watchdog 2025/03/24 22:00:50 [INFO] Start
+Watchdog 2025/03/24 22:00:50 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+tcp_server: remove dead UNIX socket: ./var/run/instance001/tarantool.control
+started
+2025-03-24 22:00:50.711 [6976] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-24 22:00:50.711 [6976] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-24 22:00:50.711 [6976] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-24 22:00:50.713 [6976] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-24 22:00:50.713 [6976] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-24 22:00:50.714 [6976] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-24 22:00:50.715 [6976] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-24 22:00:50.725 [6976] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-24 22:00:50.725 [6976] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-24 22:00:50.725 [6976] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-24 22:00:50.727 [6976] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-24 22:00:50.727 [6976] main/105/interactive evio.c:269 I> tx_binary: bound to 127.0.0.1:3301
+2025-03-24 22:00:50.727 [6976] main/105/interactive memtx_engine.cc:286 I> recovery start
+2025-03-24 22:00:50.727 [6976] main/105/interactive memtx_engine.cc:291 I> recovering from `/home/thethosaighfisic/vk_project/instances.enabled/create_db/var/lib/instance001/00000000000000000120.snap'
+2025-03-24 22:00:50.735 [6976] main/105/interactive alter.cc:4176 I> replicaset name: replicaset001
+2025-03-24 22:00:50.735 [6976] main/105/interactive alter.cc:4163 I> replicaset uuid e7f34439-fc52-45f7-9a27-a061622a2793
+2025-03-24 22:00:50.757 [6976] main/105/interactive replication.cc:564 I> assigned id 1 to replica 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-24 22:00:50.757 [6976] main/105/interactive replication.cc:582 I> assigned name instance001 to replica 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-24 22:00:50.757 [6976] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-24 22:00:50.757 [6976] main/105/interactive recovery.cc:370 I> recover from `/home/thethosaighfisic/vk_project/instances.enabled/create_db/var/lib/instance001/00000000000000000115.xlog'
+2025-03-24 22:00:50.757 [6976] main/105/interactive recovery.cc:159 I> done `/home/thethosaighfisic/vk_project/instances.enabled/create_db/var/lib/instance001/00000000000000000115.xlog'
+2025-03-24 22:00:50.757 [6976] main/105/interactive box.cc:5936 I> ready to accept requests
+2025-03-24 22:00:50.757 [6976] main/105/interactive box.cc:588 I> leaving orphan mode
+2025-03-24 22:00:50.757 [6976] main/107/gc gc.c:319 I> wal/engine cleanup is resumed
+2025-03-24 22:00:50.757 [6976] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'instance_name' configuration option to "instance001"
+2025-03-24 22:00:50.757 [6976] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'custom_proc_title' configuration option to "tarantool - instance001"
+2025-03-24 22:00:50.757 [6976] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'log_nonblock' configuration option to false
+2025-03-24 22:00:50.757 [6976] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'listen' configuration option to [{"uri":"127.0.0.1:3301"}]
+2025-03-24 22:00:50.757 [6976] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'replication' configuration option to []
+2025-03-24 22:00:50.757 [6976] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'replicaset_name' configuration option to "replicaset001"
+2025-03-24 22:00:50.758 [6976] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Mon Mar 24 23:19:56 2025
+2025-03-24 22:00:50.758 [6976] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'metrics' configuration option to {"labels":{"alias":"instance001"},"include":["all"],"exclude":[]}
+2025-03-24 22:00:50.766 [6976] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-24 22:00:50.767 [6976] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Mon Mar 24 23:53:26 2025
+2025-03-24 22:00:50.778 [6976] main main.cc:1075 I> entering the event loop
+2025-03-24 22:09:55.742 [6976] main main.cc:201 C> got signal 15 - Terminated
+2025-03-24 22:09:55.742 [6976] main/135/iproto.shutdown evio.c:516 I> tx_binary: stopped
+Watchdog 2025/03/24 22:09:55 (INFO): the Instance has shutdown.
+Watchdog 2025/03/24 22:12:31 [INFO] Start
+Watchdog 2025/03/24 22:12:31 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2025-03-24 22:12:31.339 [10953] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-24 22:12:31.339 [10953] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-24 22:12:31.339 [10953] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-24 22:12:31.343 [10953] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-24 22:12:31.343 [10953] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-24 22:12:31.343 [10953] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-24 22:12:31.343 [10953] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-24 22:12:31.359 [10953] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-24 22:12:31.359 [10953] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-24 22:12:31.359 [10953] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-24 22:12:31.362 [10953] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-24 22:12:31.363 [10953] main/105/interactive evio.c:364 E> tx_binary: failed to bind on 127.0.0.1:3301: bind, called on fd 24, aka 127.0.0.1:3301: Address already in use
+2025-03-24 22:12:31.369 [10953] main/105/interactive evio.c:368 E> SocketError: tx_binary: failed to bind, called on fd -1: Address already in use
+2025-03-24 22:12:31.369 [10953] main/105/interactive box.cc:5987 F> can't initialize storage: tx_binary: failed to bind, called on fd -1: Address already in use
+Watchdog 2025/03/24 22:12:31 (WARN): "exit status 1".
+Watchdog 2025/03/24 22:12:31 (INFO): the Instance has shutdown.
+Watchdog 2025/03/24 22:12:41 [INFO] Start
+Watchdog 2025/03/24 22:12:41 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2025-03-24 22:12:41.863 [11005] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-24 22:12:41.863 [11005] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-24 22:12:41.863 [11005] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-24 22:12:41.866 [11005] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-24 22:12:41.866 [11005] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-24 22:12:41.866 [11005] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-24 22:12:41.867 [11005] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-24 22:12:41.880 [11005] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-24 22:12:41.880 [11005] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-24 22:12:41.880 [11005] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-24 22:12:41.883 [11005] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-24 22:12:41.883 [11005] main/105/interactive evio.c:364 E> tx_binary: failed to bind on 127.0.0.1:3301: bind, called on fd 24, aka 127.0.0.1:3301: Address already in use
+2025-03-24 22:12:41.883 [11005] main/105/interactive evio.c:368 E> SocketError: tx_binary: failed to bind, called on fd -1: Address already in use
+2025-03-24 22:12:41.883 [11005] main/105/interactive box.cc:5987 F> can't initialize storage: tx_binary: failed to bind, called on fd -1: Address already in use
+Watchdog 2025/03/24 22:12:41 (WARN): "exit status 1".
+Watchdog 2025/03/24 22:12:41 (INFO): the Instance has shutdown.
+Watchdog 2025/03/24 22:14:01 [INFO] Start
+Watchdog 2025/03/24 22:14:01 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2025-03-24 22:14:01.785 [11128] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-24 22:14:01.785 [11128] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-24 22:14:01.785 [11128] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-24 22:14:01.787 [11128] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-24 22:14:01.787 [11128] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-24 22:14:01.787 [11128] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-24 22:14:01.788 [11128] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-24 22:14:01.799 [11128] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-24 22:14:01.799 [11128] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-24 22:14:01.799 [11128] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-24 22:14:01.801 [11128] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-24 22:14:01.801 [11128] main/105/interactive evio.c:364 E> tx_binary: failed to bind on 127.0.0.1:3301: bind, called on fd 24, aka 127.0.0.1:3301: Address already in use
+2025-03-24 22:14:01.801 [11128] main/105/interactive evio.c:368 E> SocketError: tx_binary: failed to bind, called on fd -1: Address already in use
+2025-03-24 22:14:01.801 [11128] main/105/interactive box.cc:5987 F> can't initialize storage: tx_binary: failed to bind, called on fd -1: Address already in use
+Watchdog 2025/03/24 22:14:01 (WARN): "exit status 1".
+Watchdog 2025/03/24 22:14:01 (INFO): the Instance has shutdown.
+Watchdog 2025/03/24 22:14:08 [INFO] Start
+Watchdog 2025/03/24 22:14:08 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2025-03-24 22:14:08.145 [11160] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-24 22:14:08.145 [11160] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-24 22:14:08.145 [11160] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-24 22:14:08.147 [11160] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-24 22:14:08.147 [11160] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-24 22:14:08.147 [11160] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-24 22:14:08.147 [11160] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-24 22:14:08.156 [11160] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-24 22:14:08.156 [11160] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-24 22:14:08.156 [11160] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-24 22:14:08.158 [11160] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-24 22:14:08.158 [11160] main/105/interactive evio.c:364 E> tx_binary: failed to bind on 127.0.0.1:3301: bind, called on fd 24, aka 127.0.0.1:3301: Address already in use
+2025-03-24 22:14:08.158 [11160] main/105/interactive evio.c:368 E> SocketError: tx_binary: failed to bind, called on fd -1: Address already in use
+2025-03-24 22:14:08.158 [11160] main/105/interactive box.cc:5987 F> can't initialize storage: tx_binary: failed to bind, called on fd -1: Address already in use
+Watchdog 2025/03/24 22:14:08 (WARN): "exit status 1".
+Watchdog 2025/03/24 22:14:08 (INFO): the Instance has shutdown.
+Watchdog 2025/03/24 22:14:23 [INFO] Start
+Watchdog 2025/03/24 22:14:23 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2025-03-24 22:14:23.829 [11237] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-24 22:14:23.829 [11237] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-24 22:14:23.829 [11237] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-24 22:14:23.831 [11237] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-24 22:14:23.831 [11237] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-24 22:14:23.831 [11237] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-24 22:14:23.831 [11237] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-24 22:14:23.838 [11237] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-24 22:14:23.838 [11237] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-24 22:14:23.838 [11237] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-24 22:14:23.840 [11237] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-24 22:14:23.840 [11237] main/105/interactive evio.c:364 E> tx_binary: failed to bind on 127.0.0.1:3301: bind, called on fd 24, aka 127.0.0.1:3301: Address already in use
+2025-03-24 22:14:23.840 [11237] main/105/interactive evio.c:368 E> SocketError: tx_binary: failed to bind, called on fd -1: Address already in use
+2025-03-24 22:14:23.840 [11237] main/105/interactive box.cc:5987 F> can't initialize storage: tx_binary: failed to bind, called on fd -1: Address already in use
+Watchdog 2025/03/24 22:14:23 (WARN): "exit status 1".
+Watchdog 2025/03/24 22:14:23 (INFO): the Instance has shutdown.
+Watchdog 2025/03/24 22:15:51 [INFO] Start
+Watchdog 2025/03/24 22:15:51 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2025-03-24 22:15:51.676 [11496] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-24 22:15:51.677 [11496] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-24 22:15:51.677 [11496] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-24 22:15:51.680 [11496] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-24 22:15:51.680 [11496] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-24 22:15:51.682 [11496] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-24 22:15:51.685 [11496] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-24 22:15:51.698 [11496] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-24 22:15:51.698 [11496] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-24 22:15:51.698 [11496] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-24 22:15:51.702 [11496] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-24 22:15:51.702 [11496] main/105/interactive evio.c:269 I> tx_binary: bound to 127.0.0.1:3301
+2025-03-24 22:15:51.703 [11496] main/105/interactive memtx_engine.cc:286 I> recovery start
+2025-03-24 22:15:51.703 [11496] main/105/interactive memtx_engine.cc:291 I> recovering from `/home/thethosaighfisic/vk_project/instances.enabled/create_db/var/lib/instance001/00000000000000000120.snap'
+2025-03-24 22:15:51.713 [11496] main/105/interactive alter.cc:4176 I> replicaset name: replicaset001
+2025-03-24 22:15:51.713 [11496] main/105/interactive alter.cc:4163 I> replicaset uuid e7f34439-fc52-45f7-9a27-a061622a2793
+2025-03-24 22:15:51.758 [11496] main/105/interactive replication.cc:564 I> assigned id 1 to replica 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-24 22:15:51.758 [11496] main/105/interactive replication.cc:582 I> assigned name instance001 to replica 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-24 22:15:51.758 [11496] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-24 22:15:51.759 [11496] main/105/interactive recovery.cc:370 I> recover from `/home/thethosaighfisic/vk_project/instances.enabled/create_db/var/lib/instance001/00000000000000000120.xlog'
+2025-03-24 22:15:51.759 [11496] main/105/interactive recovery.cc:159 I> done `/home/thethosaighfisic/vk_project/instances.enabled/create_db/var/lib/instance001/00000000000000000120.xlog'
+2025-03-24 22:15:51.760 [11496] main/105/interactive box.cc:5936 I> ready to accept requests
+2025-03-24 22:15:51.760 [11496] main/105/interactive box.cc:588 I> leaving orphan mode
+2025-03-24 22:15:51.760 [11496] main/107/gc gc.c:319 I> wal/engine cleanup is resumed
+2025-03-24 22:15:51.760 [11496] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'instance_name' configuration option to "instance001"
+2025-03-24 22:15:51.760 [11496] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'custom_proc_title' configuration option to "tarantool - instance001"
+2025-03-24 22:15:51.760 [11496] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'log_nonblock' configuration option to false
+2025-03-24 22:15:51.760 [11496] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'listen' configuration option to [{"uri":"127.0.0.1:3301"}]
+2025-03-24 22:15:51.760 [11496] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'replication' configuration option to []
+2025-03-24 22:15:51.760 [11496] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'replicaset_name' configuration option to "replicaset001"
+2025-03-24 22:15:51.760 [11496] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Mon Mar 24 23:58:09 2025
+2025-03-24 22:15:51.760 [11496] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'metrics' configuration option to {"labels":{"alias":"instance001"},"include":["all"],"exclude":[]}
+2025-03-24 22:15:51.775 [11496] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-24 22:15:51.775 [11496] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Tue Mar 25 00:07:41 2025
+2025-03-24 22:15:51.787 [11496] main main.cc:1075 I> entering the event loop
+2025-03-25 10:55:02.572 [11496] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Tue Mar 25 11:55:02 2025
+2025-03-25 11:58:53.696 [11496] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Tue Mar 25 12:58:53 2025
+2025-03-25 20:30:26.233 [11496] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Tue Mar 25 21:30:26 2025
+2025-03-25 21:30:26.229 [11496] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Tue Mar 25 22:30:26 2025
+2025-03-26 01:08:49.896 [11496] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Wed Mar 26 02:08:49 2025
+2025-03-26 02:08:49.856 [11496] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Wed Mar 26 03:08:49 2025
+2025-03-26 03:08:49.857 [11496] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Wed Mar 26 04:08:49 2025
+2025-03-26 04:08:49.862 [11496] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Wed Mar 26 05:08:49 2025
+2025-03-26 05:08:50.256 [11496] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Wed Mar 26 06:08:50 2025
+2025-03-26 09:05:55.618 [11496] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Wed Mar 26 10:05:55 2025
+2025-03-26 15:46:29.509 [11496] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Wed Mar 26 16:46:29 2025
+Watchdog 2025/03/26 18:18:00 [INFO] Start
+Watchdog 2025/03/26 18:18:00 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+tcp_server: remove dead UNIX socket: ./var/run/instance001/tarantool.control
+started
+2025-03-26 18:18:00.272 [48874] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-26 18:18:00.272 [48874] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-26 18:18:00.272 [48874] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-26 18:18:00.274 [48874] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-26 18:18:00.274 [48874] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-26 18:18:00.276 [48874] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-26 18:18:00.278 [48874] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-26 18:18:00.287 [48874] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-26 18:18:00.287 [48874] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-26 18:18:00.287 [48874] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-26 18:18:00.289 [48874] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-26 18:18:00.289 [48874] main/105/interactive evio.c:269 I> tx_binary: bound to 127.0.0.1:3301
+2025-03-26 18:18:00.290 [48874] main/105/interactive memtx_engine.cc:286 I> recovery start
+2025-03-26 18:18:00.290 [48874] main/105/interactive memtx_engine.cc:291 I> recovering from `/home/thethosaighfisic/vk_project/instances.enabled/create_db/var/lib/instance001/00000000000000000120.snap'
+2025-03-26 18:18:00.297 [48874] main/105/interactive alter.cc:4176 I> replicaset name: replicaset001
+2025-03-26 18:18:00.297 [48874] main/105/interactive alter.cc:4163 I> replicaset uuid e7f34439-fc52-45f7-9a27-a061622a2793
+2025-03-26 18:18:00.331 [48874] main/105/interactive replication.cc:564 I> assigned id 1 to replica 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-26 18:18:00.331 [48874] main/105/interactive replication.cc:582 I> assigned name instance001 to replica 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-26 18:18:00.331 [48874] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-26 18:18:00.331 [48874] main/105/interactive recovery.cc:370 I> recover from `/home/thethosaighfisic/vk_project/instances.enabled/create_db/var/lib/instance001/00000000000000000120.xlog'
+2025-03-26 18:18:00.331 [48874] main/105/interactive recovery.cc:162 W> file `/home/thethosaighfisic/vk_project/instances.enabled/create_db/var/lib/instance001/00000000000000000120.xlog` wasn't correctly closed
+2025-03-26 18:18:00.332 [48874] main/105/interactive box.cc:5936 I> ready to accept requests
+2025-03-26 18:18:00.332 [48874] main/105/interactive box.cc:588 I> leaving orphan mode
+2025-03-26 18:18:00.332 [48874] main/107/gc gc.c:319 I> wal/engine cleanup is resumed
+2025-03-26 18:18:00.332 [48874] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'instance_name' configuration option to "instance001"
+2025-03-26 18:18:00.332 [48874] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'custom_proc_title' configuration option to "tarantool - instance001"
+2025-03-26 18:18:00.332 [48874] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'log_nonblock' configuration option to false
+2025-03-26 18:18:00.332 [48874] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'listen' configuration option to [{"uri":"127.0.0.1:3301"}]
+2025-03-26 18:18:00.332 [48874] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'replication' configuration option to []
+2025-03-26 18:18:00.332 [48874] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'replicaset_name' configuration option to "replicaset001"
+2025-03-26 18:18:00.332 [48874] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Wed Mar 26 20:06:38 2025
+2025-03-26 18:18:00.332 [48874] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'metrics' configuration option to {"labels":{"alias":"instance001"},"include":["all"],"exclude":[]}
+2025-03-26 18:18:00.343 [48874] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-26 18:18:00.344 [48874] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Wed Mar 26 20:13:03 2025
+2025-03-26 18:18:00.355 [48874] main main.cc:1075 I> entering the event loop
+2025-03-26 18:22:15.637 [48874] main main.cc:201 C> got signal 2 - Interrupt
+2025-03-26 18:22:15.637 [48874] main/130/iproto.shutdown evio.c:516 I> tx_binary: stopped
+Watchdog 2025/03/26 18:22:15 (INFO): the Instance has shutdown.
+Watchdog 2025/03/26 18:51:16 [INFO] Start
+Watchdog 2025/03/26 18:51:16 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2025-03-26 18:51:16.437 [58159] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-26 18:51:16.437 [58159] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-26 18:51:16.437 [58159] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-26 18:51:16.439 [58159] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-26 18:51:16.440 [58159] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-26 18:51:16.441 [58159] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-26 18:51:16.443 [58159] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-26 18:51:16.454 [58159] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-26 18:51:16.454 [58159] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-26 18:51:16.454 [58159] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-26 18:51:16.457 [58159] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-26 18:51:16.457 [58159] main/105/interactive evio.c:364 E> tx_binary: failed to bind on 127.0.0.1:3301: bind, called on fd 24, aka 127.0.0.1:3301: Address already in use
+2025-03-26 18:51:16.459 [58159] main/105/interactive evio.c:368 E> SocketError: tx_binary: failed to bind, called on fd -1: Address already in use
+2025-03-26 18:51:16.459 [58159] main/105/interactive box.cc:5987 F> can't initialize storage: tx_binary: failed to bind, called on fd -1: Address already in use
+Watchdog 2025/03/26 18:51:16 (WARN): "exit status 1".
+Watchdog 2025/03/26 18:51:16 (INFO): the Instance has shutdown.
+Watchdog 2025/03/26 18:51:23 [INFO] Start
+Watchdog 2025/03/26 18:51:23 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2025-03-26 18:51:23.480 [58187] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-26 18:51:23.480 [58187] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-26 18:51:23.480 [58187] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-26 18:51:23.482 [58187] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-26 18:51:23.482 [58187] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-26 18:51:23.482 [58187] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-26 18:51:23.482 [58187] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-26 18:51:23.492 [58187] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-26 18:51:23.492 [58187] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-26 18:51:23.492 [58187] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-26 18:51:23.494 [58187] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-26 18:51:23.494 [58187] main/105/interactive evio.c:364 E> tx_binary: failed to bind on 127.0.0.1:3301: bind, called on fd 24, aka 127.0.0.1:3301: Address already in use
+2025-03-26 18:51:23.494 [58187] main/105/interactive evio.c:368 E> SocketError: tx_binary: failed to bind, called on fd -1: Address already in use
+2025-03-26 18:51:23.494 [58187] main/105/interactive box.cc:5987 F> can't initialize storage: tx_binary: failed to bind, called on fd -1: Address already in use
+Watchdog 2025/03/26 18:51:23 (WARN): "exit status 1".
+Watchdog 2025/03/26 18:51:23 (INFO): the Instance has shutdown.
+Watchdog 2025/03/26 18:51:33 [INFO] Start
+Watchdog 2025/03/26 18:51:33 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2025-03-26 18:51:33.639 [58228] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-26 18:51:33.639 [58228] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-26 18:51:33.639 [58228] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-26 18:51:33.641 [58228] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-26 18:51:33.641 [58228] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-26 18:51:33.641 [58228] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-26 18:51:33.641 [58228] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-26 18:51:33.650 [58228] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-26 18:51:33.650 [58228] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-26 18:51:33.650 [58228] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-26 18:51:33.652 [58228] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-26 18:51:33.652 [58228] main/105/interactive evio.c:364 E> tx_binary: failed to bind on 127.0.0.1:3301: bind, called on fd 24, aka 127.0.0.1:3301: Address already in use
+2025-03-26 18:51:33.652 [58228] main/105/interactive evio.c:368 E> SocketError: tx_binary: failed to bind, called on fd -1: Address already in use
+2025-03-26 18:51:33.652 [58228] main/105/interactive box.cc:5987 F> can't initialize storage: tx_binary: failed to bind, called on fd -1: Address already in use
+Watchdog 2025/03/26 18:51:33 (WARN): "exit status 1".
+Watchdog 2025/03/26 18:51:33 (INFO): the Instance has shutdown.
+Watchdog 2025/03/26 18:54:23 [INFO] Start
+Watchdog 2025/03/26 18:54:23 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2025-03-26 18:54:24.005 [58516] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-26 18:54:24.005 [58516] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-26 18:54:24.005 [58516] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-26 18:54:24.008 [58516] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-26 18:54:24.008 [58516] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-26 18:54:24.008 [58516] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-26 18:54:24.009 [58516] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-26 18:54:24.023 [58516] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-26 18:54:24.023 [58516] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-26 18:54:24.023 [58516] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-26 18:54:24.027 [58516] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-26 18:54:24.027 [58516] main/105/interactive evio.c:364 E> tx_binary: failed to bind on 127.0.0.1:3301: bind, called on fd 24, aka 127.0.0.1:3301: Address already in use
+2025-03-26 18:54:24.027 [58516] main/105/interactive evio.c:368 E> SocketError: tx_binary: failed to bind, called on fd -1: Address already in use
+2025-03-26 18:54:24.027 [58516] main/105/interactive box.cc:5987 F> can't initialize storage: tx_binary: failed to bind, called on fd -1: Address already in use
+Watchdog 2025/03/26 18:54:24 (WARN): "exit status 1".
+Watchdog 2025/03/26 18:54:24 (INFO): the Instance has shutdown.
+Watchdog 2025/03/26 18:57:44 [INFO] Start
+Watchdog 2025/03/26 18:57:44 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2025-03-26 18:57:45.038 [59058] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-26 18:57:45.038 [59058] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-26 18:57:45.038 [59058] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-26 18:57:45.040 [59058] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-26 18:57:45.040 [59058] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-26 18:57:45.040 [59058] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-26 18:57:45.041 [59058] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-26 18:57:45.049 [59058] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-26 18:57:45.049 [59058] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-26 18:57:45.049 [59058] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-26 18:57:45.051 [59058] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-26 18:57:45.052 [59058] main/105/interactive evio.c:364 E> tx_binary: failed to bind on 127.0.0.1:3301: bind, called on fd 24, aka 127.0.0.1:3301: Address already in use
+2025-03-26 18:57:45.052 [59058] main/105/interactive evio.c:368 E> SocketError: tx_binary: failed to bind, called on fd -1: Address already in use
+2025-03-26 18:57:45.052 [59058] main/105/interactive box.cc:5987 F> can't initialize storage: tx_binary: failed to bind, called on fd -1: Address already in use
+Watchdog 2025/03/26 18:57:45 (WARN): "exit status 1".
+Watchdog 2025/03/26 18:57:45 (INFO): the Instance has shutdown.
+Watchdog 2025/03/26 18:58:51 [INFO] Start
+Watchdog 2025/03/26 18:58:51 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2025-03-26 18:58:51.945 [59148] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-26 18:58:51.945 [59148] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-26 18:58:51.945 [59148] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-26 18:58:51.947 [59148] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-26 18:58:51.947 [59148] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-26 18:58:51.947 [59148] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-26 18:58:51.947 [59148] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-26 18:58:51.956 [59148] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-26 18:58:51.956 [59148] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-26 18:58:51.956 [59148] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-26 18:58:51.958 [59148] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-26 18:58:51.959 [59148] main/105/interactive evio.c:364 E> tx_binary: failed to bind on 127.0.0.1:3301: bind, called on fd 24, aka 127.0.0.1:3301: Address already in use
+2025-03-26 18:58:51.959 [59148] main/105/interactive evio.c:368 E> SocketError: tx_binary: failed to bind, called on fd -1: Address already in use
+2025-03-26 18:58:51.959 [59148] main/105/interactive box.cc:5987 F> can't initialize storage: tx_binary: failed to bind, called on fd -1: Address already in use
+Watchdog 2025/03/26 18:58:51 (WARN): "exit status 1".
+Watchdog 2025/03/26 18:58:51 (INFO): the Instance has shutdown.
+Watchdog 2025/03/26 19:02:14 [INFO] Start
+Watchdog 2025/03/26 19:02:14 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2025-03-26 19:02:14.954 [59380] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-26 19:02:14.955 [59380] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-26 19:02:14.955 [59380] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-26 19:02:14.957 [59380] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-26 19:02:14.957 [59380] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-26 19:02:14.957 [59380] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-26 19:02:14.957 [59380] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-26 19:02:14.966 [59380] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-26 19:02:14.966 [59380] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-26 19:02:14.966 [59380] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-26 19:02:14.968 [59380] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-26 19:02:14.968 [59380] main/105/interactive evio.c:364 E> tx_binary: failed to bind on 127.0.0.1:3301: bind, called on fd 24, aka 127.0.0.1:3301: Address already in use
+2025-03-26 19:02:14.968 [59380] main/105/interactive evio.c:368 E> SocketError: tx_binary: failed to bind, called on fd -1: Address already in use
+2025-03-26 19:02:14.968 [59380] main/105/interactive box.cc:5987 F> can't initialize storage: tx_binary: failed to bind, called on fd -1: Address already in use
+Watchdog 2025/03/26 19:02:14 (WARN): "exit status 1".
+Watchdog 2025/03/26 19:02:14 (INFO): the Instance has shutdown.
+Watchdog 2025/03/26 19:07:14 [INFO] Start
+Watchdog 2025/03/26 19:07:14 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2025-03-26 19:07:14.199 [59781] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-26 19:07:14.199 [59781] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-26 19:07:14.200 [59781] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-26 19:07:14.201 [59781] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-26 19:07:14.201 [59781] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-26 19:07:14.201 [59781] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-26 19:07:14.202 [59781] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-26 19:07:14.209 [59781] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-26 19:07:14.209 [59781] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-26 19:07:14.209 [59781] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-26 19:07:14.211 [59781] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-26 19:07:14.212 [59781] main/105/interactive evio.c:364 E> tx_binary: failed to bind on 127.0.0.1:3301: bind, called on fd 24, aka 127.0.0.1:3301: Address already in use
+2025-03-26 19:07:14.212 [59781] main/105/interactive evio.c:368 E> SocketError: tx_binary: failed to bind, called on fd -1: Address already in use
+2025-03-26 19:07:14.212 [59781] main/105/interactive box.cc:5987 F> can't initialize storage: tx_binary: failed to bind, called on fd -1: Address already in use
+Watchdog 2025/03/26 19:07:14 (WARN): "exit status 1".
+Watchdog 2025/03/26 19:07:14 (INFO): the Instance has shutdown.
+Watchdog 2025/03/26 19:09:49 [INFO] Start
+Watchdog 2025/03/26 19:09:49 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2025-03-26 19:09:49.252 [59994] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-26 19:09:49.252 [59994] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-26 19:09:49.252 [59994] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-26 19:09:49.254 [59994] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-26 19:09:49.254 [59994] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-26 19:09:49.254 [59994] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-26 19:09:49.254 [59994] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-26 19:09:49.264 [59994] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-26 19:09:49.264 [59994] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-26 19:09:49.264 [59994] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-26 19:09:49.266 [59994] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-26 19:09:49.266 [59994] main/105/interactive evio.c:364 E> tx_binary: failed to bind on 127.0.0.1:3301: bind, called on fd 24, aka 127.0.0.1:3301: Address already in use
+2025-03-26 19:09:49.266 [59994] main/105/interactive evio.c:368 E> SocketError: tx_binary: failed to bind, called on fd -1: Address already in use
+2025-03-26 19:09:49.266 [59994] main/105/interactive box.cc:5987 F> can't initialize storage: tx_binary: failed to bind, called on fd -1: Address already in use
+Watchdog 2025/03/26 19:09:49 (WARN): "exit status 1".
+Watchdog 2025/03/26 19:09:49 (INFO): the Instance has shutdown.
+Watchdog 2025/03/26 19:10:11 [INFO] Start
+Watchdog 2025/03/26 19:10:11 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2025-03-26 19:10:11.346 [60058] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-26 19:10:11.346 [60058] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-26 19:10:11.346 [60058] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-26 19:10:11.348 [60058] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-26 19:10:11.348 [60058] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-26 19:10:11.348 [60058] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-26 19:10:11.349 [60058] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-26 19:10:11.358 [60058] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-26 19:10:11.358 [60058] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-26 19:10:11.358 [60058] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-26 19:10:11.360 [60058] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-26 19:10:11.360 [60058] main/105/interactive evio.c:364 E> tx_binary: failed to bind on 127.0.0.1:3301: bind, called on fd 24, aka 127.0.0.1:3301: Address already in use
+2025-03-26 19:10:11.360 [60058] main/105/interactive evio.c:368 E> SocketError: tx_binary: failed to bind, called on fd -1: Address already in use
+2025-03-26 19:10:11.360 [60058] main/105/interactive box.cc:5987 F> can't initialize storage: tx_binary: failed to bind, called on fd -1: Address already in use
+Watchdog 2025/03/26 19:10:11 (WARN): "exit status 1".
+Watchdog 2025/03/26 19:10:11 (INFO): the Instance has shutdown.
+Watchdog 2025/03/26 19:10:17 [INFO] Start
+Watchdog 2025/03/26 19:10:17 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2025-03-26 19:10:17.192 [60090] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-26 19:10:17.192 [60090] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-26 19:10:17.192 [60090] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-26 19:10:17.193 [60090] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-26 19:10:17.193 [60090] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-26 19:10:17.193 [60090] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-26 19:10:17.194 [60090] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-26 19:10:17.204 [60090] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-26 19:10:17.204 [60090] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-26 19:10:17.204 [60090] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-26 19:10:17.206 [60090] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-26 19:10:17.206 [60090] main/105/interactive evio.c:364 E> tx_binary: failed to bind on 127.0.0.1:3301: bind, called on fd 24, aka 127.0.0.1:3301: Address already in use
+2025-03-26 19:10:17.206 [60090] main/105/interactive evio.c:368 E> SocketError: tx_binary: failed to bind, called on fd -1: Address already in use
+2025-03-26 19:10:17.206 [60090] main/105/interactive box.cc:5987 F> can't initialize storage: tx_binary: failed to bind, called on fd -1: Address already in use
+Watchdog 2025/03/26 19:10:17 (WARN): "exit status 1".
+Watchdog 2025/03/26 19:10:17 (INFO): the Instance has shutdown.
+Watchdog 2025/03/26 19:11:42 [INFO] Start
+Watchdog 2025/03/26 19:11:42 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2025-03-26 19:11:42.776 [60378] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-26 19:11:42.776 [60378] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-26 19:11:42.776 [60378] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-26 19:11:42.778 [60378] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-26 19:11:42.778 [60378] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-26 19:11:42.778 [60378] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-26 19:11:42.778 [60378] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-26 19:11:42.786 [60378] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-26 19:11:42.786 [60378] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-26 19:11:42.786 [60378] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-26 19:11:42.787 [60378] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-26 19:11:42.788 [60378] main/105/interactive evio.c:364 E> tx_binary: failed to bind on 127.0.0.1:3301: bind, called on fd 24, aka 127.0.0.1:3301: Address already in use
+2025-03-26 19:11:42.788 [60378] main/105/interactive evio.c:368 E> SocketError: tx_binary: failed to bind, called on fd -1: Address already in use
+2025-03-26 19:11:42.788 [60378] main/105/interactive box.cc:5987 F> can't initialize storage: tx_binary: failed to bind, called on fd -1: Address already in use
+Watchdog 2025/03/26 19:11:42 (WARN): "exit status 1".
+Watchdog 2025/03/26 19:11:42 (INFO): the Instance has shutdown.
+Watchdog 2025/03/26 19:11:45 [INFO] Start
+Watchdog 2025/03/26 19:11:45 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2025-03-26 19:11:45.341 [60402] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-26 19:11:45.341 [60402] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-26 19:11:45.341 [60402] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-26 19:11:45.343 [60402] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-26 19:11:45.343 [60402] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-26 19:11:45.343 [60402] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-26 19:11:45.344 [60402] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-26 19:11:45.353 [60402] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-26 19:11:45.353 [60402] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-26 19:11:45.353 [60402] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-26 19:11:45.355 [60402] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-26 19:11:45.355 [60402] main/105/interactive evio.c:364 E> tx_binary: failed to bind on 127.0.0.1:3301: bind, called on fd 24, aka 127.0.0.1:3301: Address already in use
+2025-03-26 19:11:45.355 [60402] main/105/interactive evio.c:368 E> SocketError: tx_binary: failed to bind, called on fd -1: Address already in use
+2025-03-26 19:11:45.355 [60402] main/105/interactive box.cc:5987 F> can't initialize storage: tx_binary: failed to bind, called on fd -1: Address already in use
+Watchdog 2025/03/26 19:11:45 (WARN): "exit status 1".
+Watchdog 2025/03/26 19:11:45 (INFO): the Instance has shutdown.
+Watchdog 2025/03/26 19:11:46 [INFO] Start
+Watchdog 2025/03/26 19:11:46 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2025-03-26 19:11:46.298 [60427] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-26 19:11:46.298 [60427] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-26 19:11:46.298 [60427] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-26 19:11:46.298 [60427] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-26 19:11:46.298 [60427] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-26 19:11:46.298 [60427] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-26 19:11:46.299 [60427] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-26 19:11:46.302 [60427] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-26 19:11:46.302 [60427] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-26 19:11:46.302 [60427] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-26 19:11:46.303 [60427] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-26 19:11:46.303 [60427] main/105/interactive evio.c:364 E> tx_binary: failed to bind on 127.0.0.1:3301: bind, called on fd 24, aka 127.0.0.1:3301: Address already in use
+2025-03-26 19:11:46.303 [60427] main/105/interactive evio.c:368 E> SocketError: tx_binary: failed to bind, called on fd -1: Address already in use
+2025-03-26 19:11:46.303 [60427] main/105/interactive box.cc:5987 F> can't initialize storage: tx_binary: failed to bind, called on fd -1: Address already in use
+Watchdog 2025/03/26 19:11:46 (WARN): "exit status 1".
+Watchdog 2025/03/26 19:11:46 (INFO): the Instance has shutdown.
+Watchdog 2025/03/26 19:11:46 [INFO] Start
+Watchdog 2025/03/26 19:11:46 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2025-03-26 19:11:46.624 [60453] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-26 19:11:46.624 [60453] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-26 19:11:46.625 [60453] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-26 19:11:46.625 [60453] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-26 19:11:46.625 [60453] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-26 19:11:46.625 [60453] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-26 19:11:46.625 [60453] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-26 19:11:46.628 [60453] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-26 19:11:46.628 [60453] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-26 19:11:46.628 [60453] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-26 19:11:46.629 [60453] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-26 19:11:46.629 [60453] main/105/interactive evio.c:364 E> tx_binary: failed to bind on 127.0.0.1:3301: bind, called on fd 24, aka 127.0.0.1:3301: Address already in use
+2025-03-26 19:11:46.629 [60453] main/105/interactive evio.c:368 E> SocketError: tx_binary: failed to bind, called on fd -1: Address already in use
+2025-03-26 19:11:46.629 [60453] main/105/interactive box.cc:5987 F> can't initialize storage: tx_binary: failed to bind, called on fd -1: Address already in use
+Watchdog 2025/03/26 19:11:46 (WARN): "exit status 1".
+Watchdog 2025/03/26 19:11:46 (INFO): the Instance has shutdown.
+Watchdog 2025/03/26 19:11:46 [INFO] Start
+Watchdog 2025/03/26 19:11:46 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2025-03-26 19:11:46.973 [60479] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-26 19:11:46.974 [60479] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-26 19:11:46.974 [60479] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-26 19:11:46.974 [60479] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-26 19:11:46.974 [60479] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-26 19:11:46.974 [60479] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-26 19:11:46.974 [60479] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-26 19:11:46.979 [60479] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-26 19:11:46.979 [60479] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-26 19:11:46.979 [60479] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-26 19:11:46.981 [60479] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-26 19:11:46.981 [60479] main/105/interactive evio.c:364 E> tx_binary: failed to bind on 127.0.0.1:3301: bind, called on fd 24, aka 127.0.0.1:3301: Address already in use
+2025-03-26 19:11:46.981 [60479] main/105/interactive evio.c:368 E> SocketError: tx_binary: failed to bind, called on fd -1: Address already in use
+2025-03-26 19:11:46.981 [60479] main/105/interactive box.cc:5987 F> can't initialize storage: tx_binary: failed to bind, called on fd -1: Address already in use
+Watchdog 2025/03/26 19:11:46 (WARN): "exit status 1".
+Watchdog 2025/03/26 19:11:46 (INFO): the Instance has shutdown.
+Watchdog 2025/03/26 19:11:47 [INFO] Start
+Watchdog 2025/03/26 19:11:47 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2025-03-26 19:11:47.246 [60505] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-26 19:11:47.246 [60505] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-26 19:11:47.246 [60505] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-26 19:11:47.248 [60505] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-26 19:11:47.248 [60505] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-26 19:11:47.248 [60505] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-26 19:11:47.249 [60505] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-26 19:11:47.257 [60505] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-26 19:11:47.257 [60505] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-26 19:11:47.257 [60505] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-26 19:11:47.259 [60505] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-26 19:11:47.259 [60505] main/105/interactive evio.c:364 E> tx_binary: failed to bind on 127.0.0.1:3301: bind, called on fd 24, aka 127.0.0.1:3301: Address already in use
+2025-03-26 19:11:47.259 [60505] main/105/interactive evio.c:368 E> SocketError: tx_binary: failed to bind, called on fd -1: Address already in use
+2025-03-26 19:11:47.259 [60505] main/105/interactive box.cc:5987 F> can't initialize storage: tx_binary: failed to bind, called on fd -1: Address already in use
+Watchdog 2025/03/26 19:11:47 (WARN): "exit status 1".
+Watchdog 2025/03/26 19:11:47 (INFO): the Instance has shutdown.
+Watchdog 2025/03/26 19:11:47 [INFO] Start
+Watchdog 2025/03/26 19:11:47 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2025-03-26 19:11:47.515 [60529] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-26 19:11:47.515 [60529] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-26 19:11:47.515 [60529] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-26 19:11:47.516 [60529] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-26 19:11:47.516 [60529] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-26 19:11:47.516 [60529] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-26 19:11:47.516 [60529] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-26 19:11:47.519 [60529] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-26 19:11:47.519 [60529] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-26 19:11:47.519 [60529] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-26 19:11:47.519 [60529] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-26 19:11:47.520 [60529] main/105/interactive evio.c:364 E> tx_binary: failed to bind on 127.0.0.1:3301: bind, called on fd 24, aka 127.0.0.1:3301: Address already in use
+2025-03-26 19:11:47.520 [60529] main/105/interactive evio.c:368 E> SocketError: tx_binary: failed to bind, called on fd -1: Address already in use
+2025-03-26 19:11:47.520 [60529] main/105/interactive box.cc:5987 F> can't initialize storage: tx_binary: failed to bind, called on fd -1: Address already in use
+Watchdog 2025/03/26 19:11:47 (WARN): "exit status 1".
+Watchdog 2025/03/26 19:11:47 (INFO): the Instance has shutdown.
+Watchdog 2025/03/26 19:11:48 [INFO] Start
+Watchdog 2025/03/26 19:11:48 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2025-03-26 19:11:48.738 [60553] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-26 19:11:48.739 [60553] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-26 19:11:48.739 [60553] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-26 19:11:48.739 [60553] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-26 19:11:48.739 [60553] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-26 19:11:48.739 [60553] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-26 19:11:48.740 [60553] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-26 19:11:48.742 [60553] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-26 19:11:48.742 [60553] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-26 19:11:48.742 [60553] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-26 19:11:48.743 [60553] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-26 19:11:48.743 [60553] main/105/interactive evio.c:364 E> tx_binary: failed to bind on 127.0.0.1:3301: bind, called on fd 24, aka 127.0.0.1:3301: Address already in use
+2025-03-26 19:11:48.743 [60553] main/105/interactive evio.c:368 E> SocketError: tx_binary: failed to bind, called on fd -1: Address already in use
+2025-03-26 19:11:48.743 [60553] main/105/interactive box.cc:5987 F> can't initialize storage: tx_binary: failed to bind, called on fd -1: Address already in use
+Watchdog 2025/03/26 19:11:48 (WARN): "exit status 1".
+Watchdog 2025/03/26 19:11:48 (INFO): the Instance has shutdown.
+Watchdog 2025/03/26 19:56:55 [INFO] Start
+Watchdog 2025/03/26 19:56:55 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2025-03-26 19:56:55.181 [66454] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-26 19:56:55.181 [66454] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-26 19:56:55.181 [66454] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-26 19:56:55.188 [66454] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-26 19:56:55.188 [66454] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-26 19:56:55.190 [66454] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-26 19:56:55.191 [66454] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-26 19:56:55.217 [66454] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-26 19:56:55.217 [66454] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-26 19:56:55.218 [66454] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-26 19:56:55.226 [66454] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-26 19:56:55.227 [66454] main/105/interactive evio.c:364 E> tx_binary: failed to bind on 127.0.0.1:3301: bind, called on fd 24, aka 127.0.0.1:3301: Address already in use
+2025-03-26 19:56:55.228 [66454] main/105/interactive evio.c:368 E> SocketError: tx_binary: failed to bind, called on fd -1: Address already in use
+2025-03-26 19:56:55.228 [66454] main/105/interactive box.cc:5987 F> can't initialize storage: tx_binary: failed to bind, called on fd -1: Address already in use
+Watchdog 2025/03/26 19:56:55 (WARN): "exit status 1".
+Watchdog 2025/03/26 19:56:55 (INFO): the Instance has shutdown.
+Watchdog 2025/03/26 19:58:19 [INFO] Start
+Watchdog 2025/03/26 19:58:19 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2025-03-26 19:58:19.604 [66578] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-26 19:58:19.604 [66578] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-26 19:58:19.604 [66578] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-26 19:58:19.606 [66578] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-26 19:58:19.606 [66578] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-26 19:58:19.607 [66578] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-26 19:58:19.607 [66578] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-26 19:58:19.617 [66578] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-26 19:58:19.617 [66578] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-26 19:58:19.617 [66578] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-26 19:58:19.619 [66578] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-26 19:58:19.619 [66578] main/105/interactive evio.c:364 E> tx_binary: failed to bind on 127.0.0.1:3301: bind, called on fd 24, aka 127.0.0.1:3301: Address already in use
+2025-03-26 19:58:19.619 [66578] main/105/interactive evio.c:368 E> SocketError: tx_binary: failed to bind, called on fd -1: Address already in use
+2025-03-26 19:58:19.619 [66578] main/105/interactive box.cc:5987 F> can't initialize storage: tx_binary: failed to bind, called on fd -1: Address already in use
+Watchdog 2025/03/26 19:58:19 (WARN): "exit status 1".
+Watchdog 2025/03/26 19:58:19 (INFO): the Instance has shutdown.
+Watchdog 2025/03/26 20:03:45 [INFO] Start
+Watchdog 2025/03/26 20:03:45 (INFO): using "/home/thethosaighfisic/vk_project/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2025-03-26 20:03:45.738 [67516] main/105/interactive main.cc:498 I> Tarantool 3.3.1-0-g91caac353f6 Linux-x86_64-RelWithDebInfo
+2025-03-26 20:03:45.738 [67516] main/105/interactive main.cc:500 I> log level 5 (INFO)
+2025-03-26 20:03:45.738 [67516] main/105/interactive gc.c:131 I> wal/engine cleanup is paused
+2025-03-26 20:03:45.740 [67516] main/105/interactive tuple.c:411 I> mapping 268435456 bytes for memtx tuple arena...
+2025-03-26 20:03:45.740 [67516] main/105/interactive memtx_engine.cc:1750 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2025-03-26 20:03:45.740 [67516] main/105/interactive tuple.c:411 I> mapping 134217728 bytes for vinyl tuple arena...
+2025-03-26 20:03:45.740 [67516] main/105/interactive/box.upgrade upgrade.lua:1591 I> Recovering snapshot with schema version 3.3.0
+2025-03-26 20:03:45.749 [67516] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-26 20:03:45.749 [67516] main/105/interactive box.cc:3329 I> The option replication_synchro_queue_max_size will actually take effect after the recovery is finished
+2025-03-26 20:03:45.749 [67516] main/105/interactive box.cc:5524 I> instance uuid 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-26 20:03:45.751 [67516] main/105/interactive box.cc:5553 I> instance vclock {1: 120}
+2025-03-26 20:03:45.751 [67516] main/105/interactive evio.c:269 I> tx_binary: bound to 127.0.0.1:3301
+2025-03-26 20:03:45.752 [67516] main/105/interactive memtx_engine.cc:286 I> recovery start
+2025-03-26 20:03:45.752 [67516] main/105/interactive memtx_engine.cc:291 I> recovering from `/home/thethosaighfisic/vk_project/instances.enabled/create_db/var/lib/instance001/00000000000000000120.snap'
+2025-03-26 20:03:45.759 [67516] main/105/interactive alter.cc:4176 I> replicaset name: replicaset001
+2025-03-26 20:03:45.759 [67516] main/105/interactive alter.cc:4163 I> replicaset uuid e7f34439-fc52-45f7-9a27-a061622a2793
+2025-03-26 20:03:45.830 [67516] main/105/interactive replication.cc:564 I> assigned id 1 to replica 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-26 20:03:45.830 [67516] main/105/interactive replication.cc:582 I> assigned name instance001 to replica 66bc7fb4-dcce-4d4e-9772-25d63c794827
+2025-03-26 20:03:45.831 [67516] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-26 20:03:45.831 [67516] main/105/interactive recovery.cc:370 I> recover from `/home/thethosaighfisic/vk_project/instances.enabled/create_db/var/lib/instance001/00000000000000000120.xlog'
+2025-03-26 20:03:45.831 [67516] main/105/interactive recovery.cc:159 I> done `/home/thethosaighfisic/vk_project/instances.enabled/create_db/var/lib/instance001/00000000000000000120.xlog'
+2025-03-26 20:03:45.832 [67516] main/105/interactive box.cc:5936 I> ready to accept requests
+2025-03-26 20:03:45.832 [67516] main/105/interactive box.cc:588 I> leaving orphan mode
+2025-03-26 20:03:45.832 [67516] main/107/gc gc.c:319 I> wal/engine cleanup is resumed
+2025-03-26 20:03:45.832 [67516] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'instance_name' configuration option to "instance001"
+2025-03-26 20:03:45.832 [67516] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'custom_proc_title' configuration option to "tarantool - instance001"
+2025-03-26 20:03:45.832 [67516] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'log_nonblock' configuration option to false
+2025-03-26 20:03:45.832 [67516] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'listen' configuration option to [{"uri":"127.0.0.1:3301"}]
+2025-03-26 20:03:45.832 [67516] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'replication' configuration option to []
+2025-03-26 20:03:45.832 [67516] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'replicaset_name' configuration option to "replicaset001"
+2025-03-26 20:03:45.832 [67516] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Wed Mar 26 21:16:26 2025
+2025-03-26 20:03:45.833 [67516] main/105/interactive/box.load_cfg load_cfg.lua:942 I> set 'metrics' configuration option to {"labels":{"alias":"instance001"},"include":["all"],"exclude":[]}
+2025-03-26 20:03:45.845 [67516] main/105/interactive box.cc:2274 I> update replication_synchro_quorum = 1
+2025-03-26 20:03:45.846 [67516] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Wed Mar 26 21:32:10 2025
+2025-03-26 20:03:45.858 [67516] main main.cc:1075 I> entering the event loop
+2025-03-26 20:14:45.400 [67516] main/138/console/unix/: log.lua:318 C> Potentially long select from space 'bands' (512)
+ stack traceback:
+	builtin/box/schema.lua:2611: in function 'log_long_select'
+	builtin/box/schema.lua:2628: in function <builtin/box/schema.lua:2614>
+	[C]: in function 'pcall'
+	[string "local function func(...) local yaml = require..."]:1: in function <[string "local function func(...) local yaml = require..."]:1>
+	[string "local function func(...) local yaml = require..."]:1: in function 'fn'
+	builtin/box/console.lua:429: in function <builtin/box/console.lua:426>
+	[C]: in function 'xpcall'
+	builtin/box/console.lua:572: in function 'eval'
+	builtin/box/console.lua:995: in function 'repl'
+	builtin/box/console.lua:1171: in function <builtin/box/console.lua:1150>
+	[C]: in function 'pcall'
+	builtin/socket.lua:1138: in function <builtin/socket.lua:1136>
+2025-03-26 21:29:44.056 [67516] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Wed Mar 26 22:29:44 2025
+2025-03-26 21:44:10.363 [67516] iproto xrow.c:286 E> ER_INVALID_MSGPACK: Invalid MsgPack - packet header
+2025-03-26 21:45:22.422 [67516] iproto xrow.c:286 E> ER_INVALID_MSGPACK: Invalid MsgPack - packet header
+2025-03-26 22:23:27.395 [67516] main/277/console/unix/: evio.c:516 I> tx_binary: stopped
+2025-03-26 22:23:27.397 [67516] main/277/console/unix/: evio.c:269 I> tx_binary: bound to 0.0.0.0:3301
+2025-03-26 22:23:27.397 [67516] main/277/console/unix/:/box.load_cfg load_cfg.lua:942 I> set 'listen' configuration option to 3301
+2025-03-26 22:28:13.087 [67516] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Wed Mar 26 23:28:13 2025
