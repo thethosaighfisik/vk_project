@@ -2133,6 +2133,7 @@ started
 	builtin/box/console.lua:1171: in function <builtin/box/console.lua:1150>
 	[C]: in function 'pcall'
 	builtin/socket.lua:1138: in function <builtin/socket.lua:1136>
+<<<<<<< HEAD
 2025-03-24 19:55:43.272 [803] snapshot/101/main memtx_engine.cc:1063 I> saving snapshot `/home/thethosaighfisic/vk_project/instances.enabled/create_db/var/lib/instance001/00000000000000000120.snap.inprogress'
 2025-03-24 19:55:43.291 [803] snapshot/101/main memtx_engine.cc:1165 I> done
 2025-03-24 19:55:43.293 [803] main/108/checkpoint_daemon gc.c:643 I> scheduled next checkpoint for Mon Mar 24 20:55:43 2025
@@ -2869,3 +2870,5 @@ started
 	builtin/box/console.lua:1171: in function <builtin/box/console.lua:1150>
 	[C]: in function 'pcall'
 	builtin/socket.lua:1138: in function <builtin/socket.lua:1136>
+=======
+>>>>>>> 886bde79 (First commit)

@@ -1,5 +1,6 @@
 credentials:
   users:
+<<<<<<< HEAD
     sampleuser:
       password: '123456'
       privileges:
@@ -16,3 +17,22 @@ groups:
               listen:
                 - uri: 'tarantool:3301'  
 
+=======
+    user:
+      password: '123456'
+      privileges:
+      - permissions: [ read, write ]
+        spaces: [ bands ]
+      - permissions: [ execute ]
+groups:
+  group001:
+    replicasets:
+      replicaset001:
+        instances:
+          instance001:
+            iproto:
+              listen:
+              - uri: '127.0.0.1:3301'
+app:
+  file: 'myapp.lua'
+>>>>>>> 886bde79 (First commit)

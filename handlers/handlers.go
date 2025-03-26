@@ -25,6 +25,10 @@ func HandlerPost(w http.ResponseWriter, r *http.Request){
 	conn := db.ConnectDB()
 
 	defer conn.Close()
+<<<<<<< HEAD
+=======
+
+>>>>>>> 886bde79 (First commit)
 	Data, err := conn.Do(tarantool.NewSelectRequest("bands").Limit(1).Iterator(tarantool.IterEq).Key([]interface{}{data.Key}),).Get()
 	if len(Data.Data) != 0 {
 		fmt.Println("The key exists:", http.StatusConflict)

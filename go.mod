@@ -1,6 +1,10 @@
 module vk_project
 
+<<<<<<< HEAD
 go 1.21
+=======
+go 1.22.2
+>>>>>>> 886bde79 (First commit)
 
 require (
 	github.com/go-chi/chi/v5 v5.2.1
@@ -8,6 +12,10 @@ require (
 )
 
 require (
+<<<<<<< HEAD
+=======
+	github.com/go-chi/chi v1.5.5 // indirect
+>>>>>>> 886bde79 (First commit)
 	github.com/golang/protobuf v1.3.1 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/mattn/go-pointer v0.0.1 // indirect
