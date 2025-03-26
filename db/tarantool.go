@@ -8,6 +8,7 @@ import (
 	_ "github.com/tarantool/go-tarantool/uuid"
 	//"time"
 	"log"
+	"os"
 )
 
 func ConnectDB() (*tarantool.Connection){
@@ -16,8 +17,13 @@ func ConnectDB() (*tarantool.Connection){
 		User: "sampleuser",
 		Pass: "123456",
 	}
+	host := os.Getenv("TARANTOOL_HOST")  // Будет "tarantool" из переменной окружения
+	port := os.Getenv("TARANTOOL_PORT")  // Будет "3301"
 
-	conn, err := tarantool.Connect("127.0.0.1:3301", opts)
+// Используйте эти переменные для подключения
+	addr := fmt.Sprintf("%s:%s", host, port)
+
+	conn, err := tarantool.Connect(addr, opts)
 	if err != nil {
 		fmt.Println("Connection refused:", err)
 		return nil

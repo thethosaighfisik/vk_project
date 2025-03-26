@@ -1,0 +1,8 @@
+FROM tarantool/tarantool:latest
+
+# Открываем порты
+EXPOSE 3301
+
+# Запускаем Tarantool
+CMD ["tarantool"]
+

@@ -1,6 +1,6 @@
 module vk_project
 
-go 1.22.2
+go 1.21
 
 require (
 	github.com/go-chi/chi/v5 v5.2.1
@@ -8,7 +8,6 @@ require (
 )
 
 require (
-	github.com/go-chi/chi v1.5.5 // indirect
 	github.com/golang/protobuf v1.3.1 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/mattn/go-pointer v0.0.1 // indirect

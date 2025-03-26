@@ -1,7 +1,14 @@
--- Create a space --
-box.schema.space.create('bands')
+box.cfg{
+    listen = 3301
+}
+
+if box.space.bands == nil then
+    box.schema.space.create('bands')
+end
+
+
 -- Specify field names and types --
-box.space.MyDB:format({
+box.space.bands:format({
     { name = 'key', type = 'string' },
     { name = 'value', type = 'string' },
     
